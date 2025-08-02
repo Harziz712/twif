@@ -23,7 +23,6 @@ import {
 
 const userLinks = [
   { icon: <ChatCircleDots size={20} />, name: "Chat", href: "#" },
-  { icon: <Globe size={20} />, name: "Global", href: "#" },
   { icon: <User size={20} />, name: "Login", href: "#" },
   { icon: <ShoppingBag size={20} />, name: "Cart", href: "#" },
 ];
@@ -46,7 +45,7 @@ export default function Navbar() {
 
                 <SheetContent side="left" className="bg-white text-black px-4 py-4 h-screen">
                     <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-lg font-bold">Menu</h2>
+                    <h2 className="text-lg font-bold">Twif</h2>
                 
                     </div>
 
