@@ -12,13 +12,20 @@ import {
   SheetContent,
   SheetClose,
 } from "@/components/ui/sheet";
-import MobileMenu from "./ui/MobileMenu";
+import MobileMenu, { navLinks } from "./ui/MobileMenu";
 import ThemeToggle from "./ui/themeToggle";
-const navLinks = [
-  { name: "Lookbooks", href: "#" },
-  { name: "Custom Clothing", href: "#" },
-  { name: "Custom Footwear", href: "#" },
-  { name: "Women ↗", href: "#" },
+import {
+  ChatCircleDots,
+  Globe,
+  User,
+  ShoppingBag,
+} from "@phosphor-icons/react";
+
+const userLinks = [
+  { icon: <ChatCircleDots size={20} />, name: "Chat", href: "#" },
+  { icon: <Globe size={20} />, name: "Global", href: "#" },
+  { icon: <User size={20} />, name: "Login", href: "#" },
+  { icon: <ShoppingBag size={20} />, name: "Cart", href: "#" },
 ];
 
 export default function Navbar() {
@@ -73,6 +80,17 @@ export default function Navbar() {
           {/* Right: Actions */}
           <div className="flex gap-4 items-center">
             <ThemeToggle />
+         <div className="flex gap-4 items-center">
+            {userLinks.map((link, i) => (
+              <Link
+                key={i}
+                href={link.href}
+                className="hover:text-gray-300 transition hidden sm:inline-flex"
+              >
+                {link.icon}
+              </Link>
+        ))}
+      </div>
 
             <select className="bg-transparent text-sm outline-none border-none text-white dark:text-white">
               <option value="en">EN</option>
