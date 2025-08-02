@@ -4,10 +4,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export const navLinks = [
-  { name: "Lookbooks", href: "#" },
-  { name: "Custom Clothing", href: "#" },
-  { name: "Custom Footwear", href: "#" },
-  { name: "Women ↗", href: "#" },
+  { name: "Natives", href: "#" },
+  { name: "Agbada", href: "#" },
+  { name: "Suits", href: "#" },
+  { name: "Shirts", href: "#" },
+  { name: "RTW", href: "#" },
+  { name: "Wedding Suits", href: "#" },
+  { name: "Fittings", href: "#" },
 ];
 
 

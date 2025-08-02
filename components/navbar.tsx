@@ -32,11 +32,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full fixed top-0 z-50 bg-black/70 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="w-full fixed top-0 z-50 bg-black/50 backdrop-blur-sm">
+      <div className="max-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 text-white">
+        <div className="flex items-between w-full gap-20">
           {/* Left: Drawer */}
-                <Sheet open={open} onOpenChange={setOpen}>
+                <Sheet open={open} onOpenChange={setOpen} >
                 <SheetTrigger asChild>
                     <button>
                     <Menu size={24} weight="regular" />
@@ -46,9 +47,7 @@ export default function Navbar() {
                 <SheetContent side="left" className="bg-white text-black px-4 py-4 h-screen">
                     <div className="flex justify-between items-center mb-4">
                     <h2 className="text-lg font-bold">Menu</h2>
-                    <SheetClose>
-                        <X size={24} />
-                    </SheetClose>
+                
                     </div>
 
                     <MobileMenu onClose={() => setOpen(false)} />
@@ -68,19 +67,20 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
+          </div>
 
           {/* Center: Logo */}
           <Link
             href="/"
             className="text-xl font-semibold absolute left-1/2 transform -translate-x-1/2"
           >
-            Hockerty
+            Twif
           </Link>
 
           {/* Right: Actions */}
           <div className="flex gap-4 items-center">
             <ThemeToggle />
-         <div className="flex gap-4 items-center">
+         <div className="hidden md:flex gap-4 items-center">
             {userLinks.map((link, i) => (
               <Link
                 key={i}
