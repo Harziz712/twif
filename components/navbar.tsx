@@ -32,9 +32,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full fixed top-0 z-50 bg-black/50 backdrop-blur-sm">
+    <header className="w-full fixed top-0 z-50 bg-transparent">
       <div className="max-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 text-white">
+        <div className="flex justify-between items-center h-24 text-white">
         <div className="flex items-between w-full gap-20">
           {/* Left: Drawer */}
                 <Sheet open={open} onOpenChange={setOpen} >
