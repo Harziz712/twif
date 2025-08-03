@@ -1,5 +1,6 @@
+import { ImageProps } from "next/image";
 
-export const images = [
+export  const images = [
   { src: '/suit.jpg'     , alt: 'Custom Suits', title: 'Custom Suits' },
   { src: '/suit.jpg', alt: 'Custom Shirts', title: 'Custom Shirts' },
   { src: '/suit.jpg', alt: 'Blazers', title: 'Blazers' },

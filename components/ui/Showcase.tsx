@@ -1,14 +1,13 @@
-import React from 'react'
-import Carousel from './carousel'
-import {images} from '@/lib/data'
+import { images } from "@/lib/data";
+import CarouselBox from "./carouselbox";
 
 const Showcase = () => {
   return (
-    <div className=' pl-24 sm:pl-26 lg:pl-28 py-12 '>
-      <h2 className="text-2xl font-bold mb-4 text-center">Showcase</h2>
-      <Carousel images={images} />
+    <div className="pl-4 sm:pl-6 lg:pl-28 py-12 overflow-x-visible  ">
+      <h3 className="text-xl mb-8 text-left">Tailored to perfection</h3>
+      <CarouselBox images={images} />
     </div>
-  )
-}
+  );
+};
 
-export default Showcase
+export default Showcase;
