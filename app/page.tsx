@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import Showcase from "@/components/ui/Showcase";
 import TailoringSection from "@/components/TailoringSection";
+import ProductListing from "@/components/ProductListing";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
     <Hero/>
     <Showcase/>
     <TailoringSection/>
+    <ProductListing/>
     </div>
   )
 } 

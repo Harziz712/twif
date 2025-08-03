@@ -5,7 +5,7 @@ import {
   X,
 } from "@phosphor-icons/react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Sheet,
   SheetTrigger,
@@ -30,10 +30,25 @@ const userLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  // Add scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="w-full fixed top-0 z-50 bg-transparent">
+    <header className={`w-full fixed top-0 z-50 transition-colors duration-300 ${
+      scrolled ? 'bg-white' : 'bg-transparent'
+    }`}>
       <div className="max-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 text-white">
+        <div className="flex justify-between items-center h-24 text-black">
         <div className="flex items-between w-full gap-20">
           {/* Left: Drawer */}
                 <Sheet open={open} onOpenChange={setOpen} >
