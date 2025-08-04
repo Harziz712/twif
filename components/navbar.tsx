@@ -57,9 +57,9 @@ export default function Navbar() {
                     </button>
                 </SheetTrigger>
 
-                <SheetContent side="left" className="bg-white px-4 py-4 h-screen">
+                <SheetContent side="left" className="bg-gray-50 px-4 text-gray-900 py-4 h-screen">
                     <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-lg font-bold">Twif</h2>
+                    <h2 className="text-2xl font-bold">Twif</h2>
                 
                     </div>
 

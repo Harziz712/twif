@@ -45,7 +45,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
           </DialogTrigger>
 
           {/* Dialog content */}
-          <DialogContent className="max-w-2xl bg-gray-800">
+          <DialogContent className="w-xs md:max-w-2xl bg-gray-800">
             <DialogHeader>
               <DialogTitle>{title}</DialogTitle>
               <DialogDescription className="text-gray-500">
@@ -59,7 +59,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
                 <img
                   src={imageSrc}
                   alt={alt}
-                  className="w-full h-auto rounded-md border"
+                  className="w-full h-[280px] md:h-auto rounded-md border"
                 />
                 <div className="mt-4 grid grid-cols-3 gap-2">
                   {variantImages.map((src, i) => (
@@ -67,7 +67,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
                       key={i}
                       src={src}
                       alt={`Variant ${i + 1}`}
-                      className="rounded-md border object-cover aspect-[4/5]"
+                      className="rounded-md border object-cover aspect-[9/10]"
                     />
                   ))}
                 </div>
