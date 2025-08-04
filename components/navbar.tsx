@@ -45,10 +45,10 @@ export default function Navbar() {
 
   return (
     <header className={`w-full fixed top-0 z-50 transition-colors duration-300 ${
-      scrolled ? 'bg-white' : 'bg-transparent'
+      scrolled ? 'bg-white text-black' : 'bg-transparent text-white'
     }`}>
       <div className="max-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 text-black">
+        <div className="flex justify-between items-center h-24">
         <div className="flex items-between w-full gap-20">
           {/* Left: Drawer */}
                 <Sheet open={open} onOpenChange={setOpen} >
@@ -58,7 +58,7 @@ export default function Navbar() {
                     </button>
                 </SheetTrigger>
 
-                <SheetContent side="left" className="bg-white text-black px-4 py-4 h-screen">
+                <SheetContent side="left" className="bg-white px-4 py-4 h-screen">
                     <div className="flex justify-between items-center mb-4">
                     <h2 className="text-lg font-bold">Twif</h2>
                 
@@ -106,7 +106,9 @@ export default function Navbar() {
         ))}
       </div>
 
-            <select className="bg-transparent text-sm outline-none border-none text-white dark:text-white">
+            {/* <select className="bg-transparent text-sm outline-none border-none text-white dark:text-white"> */}
+            <select className="bg-transparent text-sm outline-none border-none">
+
               <option value="en">EN</option>
               <option value="fr">FR</option>
               <option value="es">ES</option>

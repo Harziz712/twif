@@ -15,3 +15,24 @@ export const images = [
   { src: "/suit.png", hoverSrc: "/suit-hover.jpg", alt: "Custom Tailoring", title: "Custom Tailoring" },
   { src: "/suit.png", hoverSrc: "/suit-hover.jpg", alt: "Bespoke Suits", title: "Bespoke Suits" },
 ];
+
+export const products = [
+  { id: 1, title: "Urban Fit Chinos", priceRange: "$25 - $45", imageSrc: "/suit.png", alt: "Urban Fit Chinos 1" },
+  { id: 2, title: "Urban Fit Chinos", priceRange: "$78 - $98", imageSrc: "/suit.png", alt: "Urban Fit Chinos 2" },
+  { id: 3, title: "Urban Fit Chinos", priceRange: "$34 - $76", imageSrc: "/suit.png", alt: "Urban Fit Chinos 3" },
+  { id: 4, title: "Urban Fit Chinos", priceRange: "$45 - $65", imageSrc: "/suit.png", alt: "Urban Fit Chinos 4" },
+  { id: 5, title: "Urban Fit Chinos", priceRange: "$55 - $85", imageSrc: "/suit.png", alt: "Urban Fit Chinos 5" },
+  { id: 6, title: "Urban Fit Chinos", priceRange: "$40 - $70", imageSrc: "/suit.png", alt: "Urban Fit Chinos 6" },
+  { id: 7, title: "Urban Fit Chinos", priceRange: "$30 - $60", imageSrc: "/suit.png", alt: "Urban Fit Chinos 7" },
+  { id: 8, title: "Urban Fit Chinos", priceRange: "$65 - $95", imageSrc: "/suit.png", alt: "Urban Fit Chinos 8" },
+  { id: 9, title: "Urban Fit Chinos", priceRange: "$50 - $80", imageSrc: "/suit.png", alt: "Urban Fit Chinos 9" },
+  { id: 10, title: "Urban Fit Chinos", priceRange: "$35 - $75", imageSrc: "/suit.png", alt: "Urban Fit Chinos 10" },
+  { id: 11, title: "Urban Fit Chinos", priceRange: "$45 - $85", imageSrc: "/suit.png", alt: "Urban Fit Chinos 11" },
+  { id: 12, title: "Urban Fit Chinos", priceRange: "$60 - $90", imageSrc: "/suit.png", alt: "Urban Fit Chinos 12" },
+  { id: 13, title: "Urban Fit Chinos", priceRange: "$40 - $80", imageSrc: "/suit.png", alt: "Urban Fit Chinos 13" },
+  { id: 14, title: "Urban Fit Chinos", priceRange: "$45 - $75", imageSrc: "/suit.png", alt: "Urban Fit Chinos 14" },
+  { id: 15, title: "Urban Fit Chinos", priceRange: "$55 - $95", imageSrc: "/suit.png", alt: "Urban Fit Chinos 15" },
+  { id: 16, title: "Urban Fit Chinos", priceRange: "$35 - $65", imageSrc: "/suit.png", alt: "Urban Fit Chinos 16" },
+  { id: 17, title: "Urban Fit Chinos", priceRange: "$70 - $100", imageSrc: "/suit.png", alt: "Urban Fit Chinos 17" },
+  { id: 18, title: "Urban Fit Chinos", priceRange: "$45 - $85", imageSrc: "/suit.png", alt: "Urban Fit Chinos 18" }
+];
