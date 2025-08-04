@@ -13,7 +13,6 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import MobileMenu, { navLinks } from "./ui/MobileMenu";
-import ThemeToggle from "./ui/themeToggle";
 import {
   ChatCircleDots,
   Globe,
@@ -93,7 +92,6 @@ export default function Navbar() {
 
           {/* Right: Actions */}
           <div className="flex gap-4 items-center">
-            <ThemeToggle />
          <div className="hidden md:flex gap-4 items-center">
             {userLinks.map((link, i) => (
               <Link
