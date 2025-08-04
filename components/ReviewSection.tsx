@@ -37,7 +37,7 @@ const ReviewSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-10">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 md:mb-0">
-            Reviewed by you
+            Customer Reviews
           </h2>
           <div className="flex items-center gap-2">
             <span className="text-lg font-medium text-gray-900">4.9/5</span>
