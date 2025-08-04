@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import Showcase from "@/components/ui/Showcase";
 import TailoringSection from "@/components/TailoringSection";
 import ProductListing from "@/components/ProductGrid";
+import ReviewSection from "@/components/ReviewSection";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
     <Showcase/>
     <TailoringSection/>
     <ProductListing/>
+    <ReviewSection/>
     </div>
   )
 } 
