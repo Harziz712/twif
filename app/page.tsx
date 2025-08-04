@@ -4,6 +4,7 @@ import TailoringSection from "@/components/TailoringSection";
 import ProductListing from "@/components/ProductGrid";
 import ReviewSection from "@/components/ReviewSection";
 import Footer from "@/components/Footer";
+import ScrollVelocity from "@/components/BrandScroll";
 
 const Home = () => {
   return (
@@ -12,6 +13,11 @@ const Home = () => {
     <Showcase/>
     <TailoringSection/>
     <ProductListing/>
+    <ScrollVelocity
+  texts={['TWIF TWIF', 'THE WAY IT FITS']} 
+  velocity={100} 
+  className="custom-scroll-text text-gray-800  "
+/>
     <ReviewSection/>
     <Footer/>
     </div>
