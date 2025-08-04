@@ -3,6 +3,7 @@ import Showcase from "@/components/ui/Showcase";
 import TailoringSection from "@/components/TailoringSection";
 import ProductListing from "@/components/ProductGrid";
 import ReviewSection from "@/components/ReviewSection";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
     <TailoringSection/>
     <ProductListing/>
     <ReviewSection/>
+    <Footer/>
     </div>
   )
 } 
