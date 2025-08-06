@@ -12,12 +12,12 @@ const slides = [
     subtitle: "Clothes made to fit you, not the other way around",
   },
   {
-    image: "/hero2.jpg",
+    image: "/elegance.png",
     title: "Tailored Elegance",
     subtitle: "Discover our bespoke suit experience",
   },
   {
-    image: "/hero3.jpg",
+    image: "/native.png",
     title: "Traditional Meets Modern",
     subtitle: "Native attire redesigned for today’s man",
   },
