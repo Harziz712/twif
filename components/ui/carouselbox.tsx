@@ -8,7 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const CarouselBox = ({ images }: { images: Image[] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const visibleSlides = 3;
+  const visibleSlides = 1;
   const maxIndex = Math.ceil(images.length / visibleSlides) - 1;
 
   useEffect(() => {

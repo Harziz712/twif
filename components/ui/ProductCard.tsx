@@ -28,8 +28,8 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
   const variantImages = ["/suit.png", "/suit.png", "/suit.png"]; // Replace with real variants
 
   return (
-    <div className="max-w-sm mx-auto bg-white dark:bg-neutral-900 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-      <div className="relative w-full aspect-[4/5] overflow-hidden bg-gray-100 group dark:bg-neutral-800">
+    <div className="max-w-sm mx-auto bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+      <div className="relative w-full aspect-[4/5] overflow-hidden bg-gray-100 group dark:bg-gray-800">
         <img
           src={imageSrc}
           alt={alt}
@@ -46,7 +46,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
           </DialogTrigger>
 
           {/* Dialog content */}
-          <DialogContent className="w-xs md:w-7xl bg-neutral-900 text-white border border-neutral-700">
+          <DialogContent className="w-xs md:w-7xl bg-gray-900 text-white border border-gray-700">
             <DialogHeader>
               <DialogTitle className="text-white">{title}</DialogTitle>
               <DialogDescription className="text-gray-400">
@@ -56,7 +56,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 ">
               {/* Image section */}
-              <div className="relative flex justify-center items-center p-4 rounded-xl bg-neutral-800">
+              <div className="relative flex justify-center items-center p-4 rounded-xl bg-gray-800">
                 {/* Variant Images */}
                 <div className="absolute right-4 top-4 flex flex-col gap-2 z-10">
                   {variantImages.map((src, i) => (
@@ -128,7 +128,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
         </p>
 
         <div className="flex justify-center items-center gap-6">
-          <button className="w-full bg-neutral-800 text-white py-2.5 px-4 rounded-md hover:bg-neutral-700 transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-neutral-700 focus:ring-offset-2">
+          <button className="w-full bg-gray-800 text-white py-2.5 px-4 rounded-md hover:bg-gray-700 transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2">
             Buy Now
           </button>
 
@@ -138,7 +138,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
                 <ShoppingCartIcon
                   size="30"
                   weight="fill"
-                  className="text-neutral-700 dark:text-white hover:text-neutral-900 dark:hover:text-gray-300 transition"
+                  className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition"
                 />
               </button>
             </TooltipTrigger>
