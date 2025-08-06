@@ -4,7 +4,7 @@ import React from "react";
 
 const TailoringSection = () => {
   return (
-    <section className="bg-white md:h-screen py-12 px-4 md:px-20 w-full flex flex-col md:flex-row items-center justify-between">
+    <section className="bg-white h-[100%] py-25 md:py-12 px-4 md:px-20 w-full gap-30 md:gap-5 flex flex-col md:flex-row items-center justify-between">
       <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
           High–tech tailoring for every body
