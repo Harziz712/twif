@@ -20,7 +20,7 @@ const ImageCard = ({ src, alt, title, hoverSrc }: Image) => {
         <img
           src={isHovered ? hoverSrc : src}
           alt={alt}
-          className={`w-full h-full object-cover transition-transform duration-300 ${isHovered ? "scale-100 object-contain" : "scale-100 "}`}
+          className={`w-full h-full object-cover transition-transform duration-300 ${isHovered ? "scale-100 object-cover" : "scale-100 "}`}
         />
       </div>
       <p className="mt-2 text-center text-sm font-medium">{title}</p>
