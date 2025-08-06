@@ -91,8 +91,8 @@ const ReviewSection = () => {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="absolute z-30 left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 hover:bg-gray-800 text-gray-800 p-2 rounded-full" />
-            <CarouselNext className="absolute z-30 right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 hover:bg-gray-800 text-gray-800 p-2 rounded-full" />
+            <CarouselPrevious className="absolute z-30 left-2 top-1/2 transform -translate-y-1/2 bg-gray-300/40 hover:bg-gray-400 text-gray-800 p-2 rounded-full" />
+            <CarouselNext className="absolute z-30 right-2 top-1/2 transform -translate-y-1/2 bg-gray-300/40 hover:bg-gray-400 text-gray-800 p-2 rounded-full" />
           </Carousel>
 
           {/* Pagination Dots */}
