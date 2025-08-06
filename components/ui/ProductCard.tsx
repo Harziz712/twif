@@ -23,44 +23,45 @@ interface Product {
 
 const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
   const [quantity, setQuantity] = useState(1);
-  const [inStock] = useState(Math.random() > 0.3); // Random stock for demo
+  const [inStock] = useState(Math.random() > 0.3);
 
-  const variantImages = ["/suit.png", "/suit.png", "/suit.png"]; // Replace with real variants
+  const variantImages = ["/suit.png", "/suit.png", "/suit.png"];
 
   return (
-    <div className="max-w-sm mx-auto bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-      <div className="relative w-full aspect-[4/5] overflow-hidden bg-gray-100 group dark:bg-gray-800">
+    <div className="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+      {/* Image */}
+      <div className="relative w-full aspect-[4/5] overflow-hidden bg-gray-100 group">
         <img
           src={imageSrc}
           alt={alt}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
 
         {/* Overlay */}
         <Dialog>
           <DialogTrigger asChild>
-            <button className="absolute inset-0 bg-black/50 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm font-medium transition-all">
+            <button className="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm font-medium transition-all">
               Click to View
             </button>
           </DialogTrigger>
 
-          {/* Dialog content */}
-          <DialogContent className="w-xs md:w-7xl bg-gray-900 text-white border border-gray-700">
+          <DialogContent className="w-xs md:w-7xl bg-white text-gray-800 border border-gray-200 shadow-xl">
             <DialogHeader>
-              <DialogTitle className="text-white">{title}</DialogTitle>
-              <DialogDescription className="text-gray-400">
+              <DialogTitle className="text-gray-900">{title}</DialogTitle>
+              <DialogDescription className="text-gray-600">
                 {priceRange}
               </DialogDescription>
             </DialogHeader>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 ">
-              {/* Image section */}
-              <div className="relative flex justify-center items-center p-4 rounded-xl bg-gray-800">
-                {/* Variant Images */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+              {/* Variant Images & Main Image */}
+              <div className="relative flex justify-center items-center p-4 rounded-xl bg-gray-200">
                 <div className="absolute right-4 top-4 flex flex-col gap-2 z-10">
                   {variantImages.map((src, i) => (
-                    <button key={i} className="w-12 h-12 border-2 border-white/20 rounded-full overflow-hidden hover:ring-2 ring-white/40 transition">
+                    <button
+                      key={i}
+                      className="w-12 h-12 border border-gray-600 rounded-full overflow-hidden hover:ring-2 ring-gray-400 transition"
+                    >
                       <img
                         src={src}
                         alt={`Variant ${i + 1}`}
@@ -70,21 +71,20 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
                   ))}
                 </div>
 
-                {/* Main Image */}
                 <div className="w-full flex justify-center">
                   <img
                     src={imageSrc}
                     alt={alt}
-                    className="h-[280px] md:h-[320px] object-contain transition-transform duration-300"
+                    className="h-[280px] md:h-[320px] object-contain"
                   />
                 </div>
               </div>
 
-              {/* Info & actions */}
+              {/* Info */}
               <div className="space-y-4">
                 <p
                   className={`text-sm font-medium ${
-                    inStock ? "text-green-500" : "text-red-500"
+                    inStock ? "text-green-600" : "text-red-500"
                   }`}
                 >
                   {inStock ? "Still in stock" : "Out of stock"}
@@ -93,6 +93,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
                 <div className="flex items-center gap-4">
                   <Button
                     variant="outline"
+                     className="hover:text-red"
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
                   >
                     −
@@ -101,13 +102,14 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
                   <Button
                     variant="outline"
                     onClick={() => setQuantity((q) => q + 1)}
+                    className="hover:text-green"
                   >
                     +
                   </Button>
                 </div>
 
                 <Button
-                  className="w-full bg-white text-black hover:bg-gray-200 transition"
+                  className="w-full bg-gray-800  text-white hover:bg-gray-700 transition"
                   disabled={!inStock}
                 >
                   Add {quantity} to Cart
@@ -118,17 +120,15 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
         </Dialog>
       </div>
 
-      {/* Card body */}
+      {/* Card Body */}
       <div className="p-4 space-y-3">
-        <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white line-clamp-2">
+        <h3 className="text-lg md:text-xl font-semibold text-gray-900 line-clamp-2">
           {title}
         </h3>
-        <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base">
-          {priceRange}
-        </p>
+        <p className="text-gray-600 text-sm md:text-base">{priceRange}</p>
 
         <div className="flex justify-center items-center gap-6">
-          <button className="w-full bg-gray-800 text-white py-2.5 px-4 rounded-md hover:bg-gray-700 transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2">
+          <button className="w-full text-white bg-gray-800 py-2.5 px-4 rounded-md hover:bg-gray-700 transition duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
             Buy Now
           </button>
 
@@ -138,7 +138,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
                 <ShoppingCartIcon
                   size="30"
                   weight="fill"
-                  className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition"
+                  className="text-gray-700 hover:text-gray-900 transition"
                 />
               </button>
             </TooltipTrigger>
