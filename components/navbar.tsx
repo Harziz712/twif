@@ -69,7 +69,7 @@ export default function Navbar() {
 
 
           {/* Middle: Nav */}
-          <div className="hidden md:flex gap-6 items-center">
+          <div className="hidden lg:flex gap-6 items-center">
             {navLinks.map((link) => (
               <Link
                 key={link.name}

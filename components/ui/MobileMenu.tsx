@@ -9,8 +9,6 @@ export const navLinks = [
   { name: "Suits", href: "#" },
   { name: "Shirts", href: "#" },
   { name: "RTW", href: "#" },
-  { name: "Wedding Suits", href: "#" },
-  { name: "Fittings", href: "#" },
 ];
 
 
