@@ -25,7 +25,7 @@ const ProductCard = ({ id, title, priceRange, imageSrc, alt }: Product) => {
   const [quantity, setQuantity] = useState(1);
   const [inStock] = useState(Math.random() > 0.3);
 
-  const variantImages = ["/suit.png", "/suit.png", "/suit.png"];
+  const variantImages = ["/img.jpg", "/img.jpg", "/img.jpg"];
 
   return (
     <div className="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">

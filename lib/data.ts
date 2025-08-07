@@ -1,11 +1,11 @@
 export const images = [
-  { src: "/img.jpg", hoverSrc: "/img-hover.png", alt: "Custom Suits", title: "Custom Suits" },
+  { src: "/img.jpg", hoverSrc: "/img-hover.png", alt: "Safari Suits", title: "Safari Suits" },
   { src: "/img2.jpg", hoverSrc: "/img2-hover.jpg", alt: "Custom Shirts", title: "Custom Shirts" },
   { src: "/img3.png", hoverSrc: "/img3-hover.jpg", alt: "Blazers", title: "Blazers" },
   { src: "/img4.jpg", hoverSrc: "/img4-hover.jpg", alt: "Wedding", title: "Wedding" },
   { src: "/img5.jpg", hoverSrc: "/img5-hover.jpg", alt: "Polo shirts", title: "Polo shirts" },
   { src: "/img6.jpg", hoverSrc: "/img6-hover.jpg", alt: "Tux", title: "Tux" },
-  { src: "/img.jpg", hoverSrc: "/img-hover.jpg", alt: "Suits", title: "Suits" },
+  { src: "/img.jpg", hoverSrc: "/img-hover.jpg", alt: "Safari Suits", title: "Safari Suits" },
   { src: "/suit.png", hoverSrc: "/suit-hover.jpg", alt: "Shirts", title: "Shirts" },
   { src: "/suit.png", hoverSrc: "/suit-hover.jpg", alt: "Trousers", title: "Trousers" },
   { src: "/suit.png", hoverSrc: "/suit-hover.jpg", alt: "Jackets", title: "Jackets" },
