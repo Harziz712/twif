@@ -11,6 +11,16 @@ export const navLinks = [
   { name: "RTW", href: "#" },
 ];
 
+export const mobileNavLinks = [
+  { name: "Natives", href: "#" },
+  { name: "Agbada", href: "#" },
+  { name: "Suits", href: "#" },
+  { name: "Shirts", href: "#" },
+  { name: "RTW", href: "#" },
+  {name: "About us", href: "#"},
+  {name: "Contact",  href: '#'}
+];
+
 
 
 export default function MobileMenu({ onClose }: { onClose: () => void }) {
@@ -23,7 +33,7 @@ export default function MobileMenu({ onClose }: { onClose: () => void }) {
       className="p-6"
     >
       <nav className="flex flex-col text-gray-800  gap-4">
-        {navLinks.map((link) => (
+        {mobileNavLinks.map((link) => (
           <Link
             key={link.name}
             href={link.href}

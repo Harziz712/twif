@@ -14,7 +14,7 @@ interface SlideProps {
 
 const slides: SlideProps[] = [
   {
-    image: "/hero1.jpg",
+    image: "/back3.jpg",
     title: "Shop Men's Suits",
     subtitle: `Discover TWIF's Clothings for Premium bespoke and ready-to-wear men's clothing in Nigeria`,
     plus: "Explore our collection of suits, agbada, native attire, and more.",
