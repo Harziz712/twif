@@ -9,17 +9,18 @@ const slides = [
   {
     image: "/hero1.jpg",
     title: "Dress the real you",
-    subtitle: "Clothes made to fit you, not the other way around",
+    subtitle: `Discover TWIF's bespoke and ready-to-wear collection.
+     Clothes made to fit you, not the other way around`,
+  },
+    {
+    image: "/native.png",
+    title: "Traditional Meets Modern",
+    subtitle: "Native attire redesigned for today’s man",
   },
   {
     image: "/elegance.png",
     title: "Tailored Elegance",
-    subtitle: "Discover our bespoke suit experience",
-  },
-  {
-    image: "/native.png",
-    title: "Traditional Meets Modern",
-    subtitle: "Native attire redesigned for today’s man",
+    subtitle: "Discover TWIF's bespoke and ready-to-wear collection",
   },
 ];
 
@@ -54,7 +55,7 @@ export default function HeroCarousel() {
             className="absolute inset-0 bg-cover bg-center scale-100   transition-transform duration-[6000ms] ease-out"
             style={{
               backgroundImage: `url(${slide.image})`,
-            //   animation: "zoomIn 8s ease-in-out infinite",
+              animation: "zoomIn 8s ease-in-out infinite",
             }}
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -81,7 +82,7 @@ export default function HeroCarousel() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="text-xl md:text-2xl"
+              className="text-xl md:text-2xl font-light max-w-2xl"
             >
               {slide.subtitle}
             </motion.p>
